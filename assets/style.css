@@ -1,0 +1,231 @@
+h1 {
+    margin-left: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-left: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+ul {
+    margin-left: 20px;
+    border-radius: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: bisque;
+}
+
+header {
+    padding: .5rem;
+    text-align: center;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    z-index: 1; /* Ensure it's above the background container */
+}
+
+aside {
+    width: 25%;
+    padding: 1rem;
+    margin-left: -20px;
+    z-index: 1; /* Ensure it's above the background container */
+}
+
+form {
+    margin-bottom: 1rem;
+    z-index: 1;
+}
+
+#searchHistory {
+    border-top: 1px solid #bdc3c7;
+    padding-top: 1rem;
+    z-index: 1;
+    border-color: #bdc3c7;
+    color: rgb(249, 217, 162);
+}
+
+main {
+    flex-grow: 1;
+    padding: 1rem;
+    z-index: 1;
+}
+
+.custom-text-color {
+    color: rgb(249, 217, 162);
+}
+
+.custom-btn-muted-red {
+    background-color: rgba(245, 73, 54, 0.2); /* Muted red background color */
+    border-color: rgba(245, 73, 54, 0.2); /* Muted red border color */
+    color: #fce97c; /* Text color to ensure readability */
+}
+
+.translucent-grey {
+    background-color: rgba(128, 128, 128, 0.5); /* Translucent grey background color */
+    padding: 10px; /* Add padding for spacing */
+    border-radius: 10px; /* Rounded edges */
+}
+
+.translucent-grey input[type="text"] {
+    margin: 5px; /* Add margin for spacing */
+    border-radius: 5px; /* Rounded edges for input */
+    background-color: rgba(255, 255, 255, 0.5); /* Translucent white background color */
+}
+
+.translucent-grey input[type="text"]::placeholder {
+    color: rgba(0, 0, 0, 0.5); /* Translucent black placeholder text color */
+}
+
+.translucent-grey button[type="submit"] {
+    margin: 5px; /* Add margin for spacing */
+    border-radius: 5px; /* Rounded edges for input and button */
+}
+
+#currentWeather {
+    display:flex;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    z-index: 1;
+    color: rgb(249, 217, 162);
+    font-style: strong;
+}
+
+
+#fiveDayForecast {
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+   
+}
+
+.list-group {
+    border: 2px rgba(75, 74, 74, 0.4); /* Change border color and thickness */
+    border-radius: 10px; /* Change border radius */
+    background-color: rgba(75, 74, 74, 0.4); /* Adjust the alpha value to change transparency */
+    padding: 10px; /* Add padding */
+}
+
+.list-group-item {
+    border-color: rgba(73, 72, 72, 0.4); /* Change border color */
+    border-radius: 10px; /* Change border radius */
+    background-color: rgba(128, 128, 128, 0.2); /* Adjust the alpha value to change transparency */
+    padding: 5px 10px; /* Add padding */
+    color:bisque;
+    font-size: 16px; /* Change font size */
+}
+
+
+@keyframes move-background {
+    from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  @-webkit-keyframes move-background {
+    from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  
+  @-moz-keyframes move-background {    
+      from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  
+      @-webkit-keyframes move-background {
+      from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  
+  .background-container{
+      position: fixed;
+      top: 0;
+      left:0;
+      bottom: 0;
+      right: 0;
+      z-index: -1; /* Ensures it's behind other content */
+    pointer-events: none; /* Allows clicking through the background */
+  }
+  
+  .stars {
+   background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+   position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: block;
+        z-index: 0;
+  }
+  
+  .twinkling{
+      width:10000px;
+      height: 100%;
+      background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+      background-size: 1000px 1000px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 2;
+      
+      -moz-animation:move-background 30s linear infinite;
+    -ms-animation:move-background 30s linear infinite;
+    -o-animation:move-background 30s linear infinite;
+    -webkit-animation:move-background 30s linear infinite;
+    animation:move-background 30s linear infinite;
+      
+  }
+  
+  .clouds{
+      width:10000px;
+      height: 100%;
+      background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
+      background-size: 1000px 1000px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 3;
+  
+     -moz-animation:move-background 80s linear infinite;
+    -ms-animation:move-background 80s linear infinite;
+    -o-animation:move-background 80s linear infinite;
+    -webkit-animation:move-background 80s linear infinite;
+    animation:move-background 80s linear infinite;
+  }
+  img{
+    height: 70vh;
+    width:70vh;
+    position: absolute;
+    z-index: 3;
+    right: 20px;
+  }
+  
