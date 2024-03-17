@@ -91,13 +91,13 @@ $(document).ready(function() {
     let cityElement = $('#currentCity');
     let temperatureElement = $('#currentTemperature');
     let humidityElement = $('#currentHumidity');
-    let skyIconElement = $('#skyIcon');
+    // let skyIconElement = $('#skyIcon');
     let skyViewElement = $('#skyView');
     let feelsLikeElement = $('#feelsLike');
     let windSpeedElement = $('#windSpeed');
 
     //Adding text to current weather block with variables above
-    skyIconElement.html(`<img src="https://openweathermap.org/img/wn/${skyIcon}.png" width=80px height=80px>`);
+    // skyIconElement.html(`<img src="https://openweathermap.org/img/wn/${skyIcon}.png" width=80px height=80px>`);
     cityElement.text(`${city}`);
     skyViewElement.text(`Today's sky: ${skyView}.`);
     temperatureElement.text(`Currently with a temperature of ${roundedTemperatureCurrent}°F`,);

@@ -6,9 +6,9 @@ Use the OpenWeather forecast API to create a site that shows selected city's cur
 
 ## RESOURCES & CREDITS:
 - Class instruction and office hours
-- Pertinent MDN and W3 sections on web APIs, jquery
-- Openweathermap API documentation
-- Xpert Learning assistant
+- Pertinent W3 sections on [web APIs](https://www.w3schools.com/js/js_api_intro.asp), [jquery](https://www.w3schools.com/jquery/default.asp)
+- [Openweathermap API documentation](https://openweathermap.org/guide)
+- Xpert AI Learning assistant
 - Anatasia Goodwin, Pen code @agoodwin, [stars, clouds Background](https://codepen.io/agoodwin/pen/NMJoER)
 
 
