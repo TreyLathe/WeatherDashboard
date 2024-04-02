@@ -27,4 +27,6 @@ Use the OpenWeather forecast API to create a site that shows selected city's cur
 
 ## FUTURE DEVELOPMENT
 - create a different background that changes based on daylight/nightime hours.
+- create different backgrounds depending on current weather, sun, 
+clouds, rain, snow.. for day and night
 - improve search functionality to correct and autofill
